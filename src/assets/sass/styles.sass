@@ -1,0 +1,20 @@
+@import '~bootstrap/scss/bootstrap'
+
+img
+    width: 500px
+    height: 500px
+    object-fit: contain
+
+img
+    height: 100%
+    width: 100%
+    object-fit: cover
+    border-radius: 3px
+    background-color: black
+
+img.lazy-image
+    opacity: 0.1
+    will-change: opacity
+    transition: all 0.3s
+img.lazy-image.loaded
+    opacity: 1
